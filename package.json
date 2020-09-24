@@ -20,6 +20,7 @@
   ],
   "scripts": {
     "build": "rimraf lib && tsc",
+    "prepare": "npm run build",
     "preversion": "yarn test",
     "version": "yarn run build",
     "postversion": "git push && git push --tags",
