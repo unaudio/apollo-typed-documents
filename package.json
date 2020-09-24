@@ -1,6 +1,6 @@
 {
   "name": "apollo-typed-documents",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Get type safety for your apollo documents.",
   "keywords": [
     "apollo",
@@ -29,7 +29,9 @@
     "generate": "yarn run build && (cd examples/cra && yarn run generate) && (cd examples/cra-ts && yarn run generate) && (cd examples/docs && yarn run generate)",
     "docs": "yarn run generate && md-magic --path README.md"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "@graphql-codegen/visitor-plugin-common": "^1.13.3",
     "pascal-case": "^3.1.1"
